@@ -6,6 +6,11 @@
   "scripts": {
     "test": "xo && nyc --reporter=html ava -v && nyc report"
   },
+  "keywords": [
+    "drupal",
+    "oauth",
+    "api"
+  ],
   "author": "Matthew Grill",
   "license": "MIT",
   "dependencies": {
