@@ -1,0 +1,54 @@
+{
+  "name": "prous",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "xo && nyc --reporter=html ava -v && nyc report"
+  },
+  "author": "Matthew Grill",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "qs": "^6.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-istanbul": "^3.1.2",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "nyc": "^10.0.0",
+    "require-subvert": "^0.1.0",
+    "xo": "^0.17.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-2"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "ignores": [],
+    "envs": [
+      "browser",
+      "node"
+    ],
+    "rules": {
+      "camelcase": 0,
+      "import/no-unassigned-import": 0
+    }
+  }
+}
